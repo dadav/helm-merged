@@ -1,0 +1,9 @@
+---
+name: "show-merged"
+version: "0.1.0"
+usage: "helm show-merged"
+description: "display all merged values"
+ignoreFlags: false
+command: "$HELM_PLUGIN_DIR/merged.sh"
+hooks:
+  install: "$HELM_PLUGIN_DIR/merged.sh --help"
