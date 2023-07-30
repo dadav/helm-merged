@@ -18,7 +18,7 @@ for opt in "$@"; do
   esac
 done
 
-TEMPLATE_FILE=templates/final.tpl
+TEMPLATE_FILE=templates/final${RANDOM}.tpl
 
 # Check current working directory for Chart.yaml
 [[ ! -f Chart.yaml ]] && {
