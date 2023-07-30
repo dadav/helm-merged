@@ -1,6 +1,6 @@
 ---
 name: "show-merged"
-version: "0.1.1"
+version: "0.1.2"
 usage: "show merged values"
 description: "show the final content of .Values"
 ignoreFlags: false
