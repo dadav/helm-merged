@@ -1,6 +1,6 @@
 ---
 name: "show-merged"
-version: "0.1.0"
+version: "0.1.1"
 usage: "helm show-merged"
 description: "display all merged values"
 ignoreFlags: false
