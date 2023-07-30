@@ -32,4 +32,4 @@ EOF
 
 trap 'rm $TEMPLATE_FILE' EXIT
 
-$HELM_BIN template . --disable-openapi-validation -s $TEMPLATE_FILE "$@" | tail -n +3
+$HELM_BIN template . --disable-openapi-validation -s $TEMPLATE_FILE "$@" | sed '2d'
