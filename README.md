@@ -13,7 +13,7 @@ It's helpful if you want to see the end result of all the merged yaml files.
 # you probably want this
 helm show-merged
 
-# every other parameter besides -h/--help will be added to the helm template command.
+# every other parameter besides -h/--help/--no-templates will be added to the helm template command.
 # so you can:
 
 # add custom yaml files
@@ -21,6 +21,9 @@ helm show-merged -f foo.yaml
 
 # run debug mode
 helm show-merged --debug
+
+# disable any other template rendering
+helm show-merged --no-templates
 ```
 
 ## install
